@@ -37,5 +37,5 @@ async def on_message(message):
         if result['prediction'] == 1:
             await message.delete()
             await message.channel.send(f'{message.author.mention} 나쁜말 하지마')
-
+ 
 bot.run(token)
